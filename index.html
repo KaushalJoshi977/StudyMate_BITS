@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#161d38">
+  <meta name="description" content="StudyMate helps students turn deadlines and available study time into a realistic plan they can adapt when life changes.">
+  <title>StudyMate — Make every study session count</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="sprite" aria-hidden="true">
+    <symbol id="i-dashboard" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><rect x="14" y="14" width="7" height="7" rx="1.4"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 7C9 5 5 5 2 6v14c4-1 7-.5 10 1 3-1.5 6-2 10-1V6c-3-1-7-1-10 1ZM12 7v14"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 20h18M6 16V9M12 16V4M18 16v-6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 4.5 2.4 18a1.7 1.7 0 0 0 1.5 2.5h16.2a1.7 1.7 0 0 0 1.5-2.5L13.7 4.5a2 2 0 0 0-3.4 0Z"/><path d="M12 9v5M12 17h.01"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6 9a7 7 0 0 1 12-2l2 5M4 12l2 5a7 7 0 0 0 12-2"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.4 7.6L22 12l-7.6 2.4L12 22l-2.4-7.6L2 12l7.6-2.4L12 2Z"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="m15 5 4 4M4 20l4.5-1 11-11a2.8 2.8 0 0 0-4-4l-11 11L4 20Z"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"/></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 6.5C9 4.7 6.1 4.5 3 5.5V18c3.5-1 6.5-.5 9 1.4 2.5-1.9 5.5-2.4 9-1.4V5.5c-3.1-1-6-.8-9 1Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 6.5v12.9" stroke="currentColor" stroke-width="1.8"/></svg></div>
+        <div class="brand-name">Study<span>Mate</span><small>YOUR STUDY COMPANION</small></div>
+      </div>
+      <div class="sidebar-label">WORKSPACE</div>
+      <nav class="nav-list" aria-label="Main navigation">
+        <button class="nav-item active" data-view="today"><svg class="icon"><use href="#i-dashboard"></use></svg><span>Overview</span></button>
+        <button class="nav-item" data-view="planner"><svg class="icon"><use href="#i-calendar"></use></svg><span>Weekly planner</span></button>
+        <button class="nav-item" data-view="courses"><svg class="icon"><use href="#i-book"></use></svg><span>My courses</span></button>
+        <button class="nav-item" data-view="mastery"><svg class="icon"><use href="#i-target"></use></svg><span>Topic mastery</span></button>
+      </nav>
+      <div class="sidebar-label second">MANAGE</div>
+      <nav class="nav-list" aria-label="Workspace settings">
+        <button class="nav-item" data-view="availability"><svg class="icon"><use href="#i-clock"></use></svg><span>Availability</span></button>
+        <button class="nav-item" data-view="insights"><svg class="icon"><use href="#i-chart"></use></svg><span>My progress</span></button>
+        <button class="nav-item" data-view="settings"><svg class="icon"><use href="#i-info"></use></svg><span>About &amp; data</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-tip"><span class="mini-spark"><svg class="icon"><use href="#i-spark"></use></svg></span><strong>Your plan can flex.</strong><p>Missed a session? Re-plan without starting over.</p><button data-action="replan-all">Re-plan my week <svg class="icon"><use href="#i-arrow"></use></svg></button></div>
+        <div class="sidebar-foot">Built for focused, flexible studying <span>✦</span></div>
+      </div>
+    </aside>
+    <div class="mobile-shade" id="mobileShade" data-action="close-sidebar"></div>
+
+    <div class="main-wrapper">
+      <header class="topbar">
+        <div class="topbar-leading"><button class="icon-button mobile-menu" aria-label="Open menu" data-action="toggle-sidebar"><svg class="icon"><use href="#i-menu"></use></svg></button><div class="breadcrumb"><span>My workspace</span><span class="breadcrumb-sep">/</span><strong id="breadcrumbText">Overview</strong></div></div>
+        <div class="topbar-actions"><span class="demo-tag"><span></span> Demo workspace</span><button class="profile-button" data-action="edit-profile" aria-label="Edit your profile"><span class="avatar" id="avatarInitial">S</span><span id="profileText">Student</span><svg class="icon"><use href="#i-chev-right"></use></svg></button></div>
+      </header>
+      <main id="appView" class="content-area" tabindex="-1"><div class="loading">Preparing your study workspace…</div></main>
+      <footer class="app-footer">StudyMate <span>·</span> A personal study planning &amp; progress companion <span>·</span> Prototype v1.0</footer>
+    </div>
+  </div>
+  <div id="modalRoot"></div>
+  <div id="toastRoot" class="toast-root" role="status" aria-live="polite"></div>
+</body>
+</html>
