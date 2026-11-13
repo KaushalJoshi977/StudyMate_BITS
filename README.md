@@ -295,7 +295,7 @@ These are deliberate MVP boundaries, not claims of completed capabilities.
 
 ## 🛣️ Future Enhancements
 
-Potential next iterations, subject to student feedback:
+Potential next iterations, subject to feedback:
 
 - Account-based workspaces and secure cloud synchronization.
 - Calendar import/export and calendar event syncing.
@@ -306,16 +306,7 @@ Potential next iterations, subject to student feedback:
 - Accessibility refinements from usability testing.
 - Later, deeper LMS integration or collaborative learning features, **only if validated as valuable**.
 
-## 🎓 Academic Context
 
-**Project:** StudyMate — A Personal Study Planning and Progress Companion  
-**Original IPD author:** Kaushal Joshi  
-**Course:** Product Discovery and Requirements Engineering (SE ZG507)  
-**Type:** Functional front-end prototype developed from the initial product concept
-
-The goal is to demonstrate how an initial problem and product idea can be refined into a usable design and an interactive MVP, then evaluated with prospective users.
-
----
 
 <div align="center">
 
